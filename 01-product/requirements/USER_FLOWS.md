@@ -73,7 +73,7 @@
 
 | Flow | Что проверить | Где описан тест |
 | --- | --- | --- |
-| UF-001 |  | [`../04-quality/TESTING.md`](../04-quality/TESTING.md) |
+| UF-001 |  | [`../04-quality/TESTING.md`](../../04-quality/TESTING.md) |
 
 ## Открытые вопросы
 

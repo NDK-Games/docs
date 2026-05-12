@@ -10,7 +10,7 @@
 
 ## Current State
 
-- Статус:
+- Статус: `todo | doing | review | done | blocked`
 - Ветка / PR:
 - Последняя проверка:
 - Что работает:

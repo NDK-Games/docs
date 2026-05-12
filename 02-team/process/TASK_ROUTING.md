@@ -23,13 +23,13 @@
 
 | Тип задачи | Кто назначает | Основная роль | Подключить при необходимости | Шаблон |
 | --- | --- | --- | --- | --- |
-| Новая функция | CEO Agent | Product Manager Agent -> Tech Lead -> Developer Feature Agent | QA | [`FEATURE_TEMPLATE.md`](TEMPLATES/FEATURE_TEMPLATE.md) |
-| Баг | CEO Agent | Tech Lead -> Developer Bug Fix Agent | QA | [`BUGFIX_TEMPLATE.md`](TEMPLATES/BUGFIX_TEMPLATE.md) |
-| Тесты | CEO Agent / Tech Lead | Developer Test Writer Agent | QA, Feature Developer | [`TASK_TEMPLATE.md`](TEMPLATES/TASK_TEMPLATE.md) |
-| Ревью | CEO Agent / Tech Lead | Developer Code Reviewer Agent | Security, QA | [`REVIEW_TEMPLATE.md`](TEMPLATES/REVIEW_TEMPLATE.md) |
+| Новая функция | CEO Agent | Product Manager Agent -> Tech Lead -> Developer Feature Agent | QA | [`FEATURE_TEMPLATE.md`](../templates/FEATURE_TEMPLATE.md) |
+| Баг | CEO Agent | Tech Lead -> Developer Bug Fix Agent | QA | [`BUGFIX_TEMPLATE.md`](../templates/BUGFIX_TEMPLATE.md) |
+| Тесты | CEO Agent / Tech Lead | Developer Test Writer Agent | QA, Feature Developer | [`TASK_TEMPLATE.md`](../templates/TASK_TEMPLATE.md) |
+| Ревью | CEO Agent / Tech Lead | Developer Code Reviewer Agent | Security, QA | [`REVIEW_TEMPLATE.md`](../templates/REVIEW_TEMPLATE.md) |
 | Архитектурное решение | CEO Agent | CTO Agent | Tech Lead, Security | ADR |
-| Релиз / деплой | CEO Agent | DevOps Agent | QA, Tech Lead | [`../05-operations/RELEASE_CHECKLIST.md`](../05-operations/RELEASE_CHECKLIST.md) |
-| Документация | CEO Agent | Documentation Agent | Владелец области | [`TASK_TEMPLATE.md`](TEMPLATES/TASK_TEMPLATE.md) |
+| Релиз / деплой | CEO Agent | DevOps Agent | QA, Tech Lead | [`../05-operations/RELEASE_CHECKLIST.md`](../../05-operations/RELEASE_CHECKLIST.md) |
+| Документация | CEO Agent | Documentation Agent | Владелец области | [`TASK_TEMPLATE.md`](../templates/TASK_TEMPLATE.md) |
 
 ## Жизненный цикл задачи
 
@@ -43,7 +43,7 @@
 
 ## Правило автозаполнения
 
-Шаблоны из `TEMPLATES/` заполняет назначенная роль:
+Шаблоны из `../templates/` заполняет назначенная роль:
 
 - Product Manager Agent заполняет feature scope и acceptance criteria.
 - Tech Lead Agent заполняет технический план, owner и ветку.

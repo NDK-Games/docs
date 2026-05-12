@@ -54,8 +54,9 @@
 
 ## Что не хранить здесь
 
-- Текущие задачи - в [`PLAN.md`](PLAN.md) или task tracker.
-- Ошибки - в [`../04-quality/BUGS.md`](../04-quality/BUGS.md).
+- Текущий спринт - в [`PLAN.md`](../planning/PLAN.md) или task tracker.
+- Очередь будущих задач - в [`BACKLOG.md`](../planning/BACKLOG.md).
+- Ошибки - в [`../04-quality/BUGS.md`](../../04-quality/BUGS.md).
 - Технические контракты - в `03-engineering/`.
 - Инструкции для команды - в `02-team/`.
-- Историю изменений - в [`../06-history/CHANGELOG.md`](../06-history/CHANGELOG.md).
+- Историю изменений - в [`../06-history/CHANGELOG.md`](../../06-history/CHANGELOG.md).

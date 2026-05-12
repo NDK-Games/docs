@@ -19,10 +19,11 @@ CEO Agent является единственной входной точкой 
 ## Вход
 
 - Сообщение пользователя на естественном языке.
-- [`../../01-product/PROJECT.md`](../../01-product/PROJECT.md)
-- [`../../01-product/ROADMAP.md`](../../01-product/ROADMAP.md)
-- [`../../01-product/PLAN.md`](../../01-product/PLAN.md)
-- [`../TASK_ROUTING.md`](../TASK_ROUTING.md)
+- [`01-product/strategy/PROJECT.md`](../../01-product/strategy/PROJECT.md)
+- [`01-product/strategy/ROADMAP.md`](../../01-product/strategy/ROADMAP.md)
+- [`01-product/planning/BACKLOG.md`](../../01-product/planning/BACKLOG.md)
+- [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md)
+- [`02-team/process/TASK_ROUTING.md`](../process/TASK_ROUTING.md)
 - Метрики, риски, ограничения.
 
 ## Выход
@@ -31,7 +32,7 @@ CEO Agent является единственной входной точкой 
 - Решение о запуске или остановке инициативы.
 - Принятый риск или запрос на дополнительную проверку.
 - Назначенный маршрут работы.
-- Обновленная запись в plan или задача для нижестоящей роли.
+- Обновленная запись в backlog / plan или задача для нижестоящей роли.
 - Итоговый статус для пользователя.
 
 ## Рабочий процесс
@@ -40,7 +41,7 @@ CEO Agent является единственной входной точкой 
 2. Классифицировать запрос: `idea | feature | bug | risk | release | docs | operations | decision`.
 3. Проверить цель проекта, ограничения и текущий roadmap.
 4. Определить приоритет: `P0 | P1 | P2 | P3`.
-5. Назначить следующую роль по [`../TASK_ROUTING.md`](../TASK_ROUTING.md).
+5. Назначить следующую роль по [`02-team/process/TASK_ROUTING.md`](../process/TASK_ROUTING.md).
 6. Поручить нижестоящей роли заполнить нужный шаблон или обновить source of truth.
 7. Получить результат, проверить его на соответствие цели.
 8. Принять итог или вернуть на доработку.

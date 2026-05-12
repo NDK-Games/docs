@@ -9,18 +9,20 @@
 ## Быстрый старт
 
 1. Откройте [`00-context/DOCS.md`](00-context/DOCS.md) - карту всей документации и правила владения фактами.
-2. Прочитайте [`01-product/PROJECT.md`](01-product/PROJECT.md) - суть проекта, цели, границы и владельцы.
-3. Проверьте [`01-product/STATE.md`](01-product/STATE.md) - текущее состояние, последние решения и открытые вопросы.
-4. Посмотрите [`01-product/PLAN.md`](01-product/PLAN.md) - текущий рабочий план.
-5. Для участия в работе прочитайте [`02-team/ONBOARDING.md`](02-team/ONBOARDING.md).
+2. Прочитайте [`01-product/strategy/PROJECT.md`](01-product/strategy/PROJECT.md) - суть проекта, цели, границы и владельцы.
+3. Проверьте [`01-product/strategy/STATE.md`](01-product/strategy/STATE.md) - текущее состояние, последние решения и открытые вопросы.
+4. Посмотрите [`01-product/strategy/ROADMAP.md`](01-product/strategy/ROADMAP.md) - спринты, вехи и приоритеты.
+5. Посмотрите [`01-product/planning/BACKLOG.md`](01-product/planning/BACKLOG.md) - очередь задач вне текущего спринта.
+6. Посмотрите [`01-product/planning/PLAN.md`](01-product/planning/PLAN.md) - текущий спринт.
+7. Для участия в работе прочитайте [`02-team/people/ONBOARDING.md`](02-team/people/ONBOARDING.md).
 
 ## Структура
 
 ```text
 00-context/      Карта документации и правила source of truth
-01-product/      Продукт, требования, сценарии, план и состояние
-02-team/         Команда, роли, workflow, ветки и ревью
-03-engineering/  Архитектура, стек, данные, API и интеграции
+01-product/      Продукт: strategy, planning, requirements, growth, knowledge
+02-team/         Команда: people, process, agents, templates
+03-engineering/  Инженерия: architecture, stack
 04-quality/      Соглашения, тестирование и баги
 05-operations/   Окружения, деплой, безопасность и поддержка
 06-history/      История изменений
@@ -40,5 +42,4 @@
 User -> CEO Agent -> назначенная роль -> review -> обновленный source of truth -> результат пользователю
 ```
 
-Маршрутизация задач описана в [`02-team/TASK_ROUTING.md`](02-team/TASK_ROUTING.md), процесс работы - в [`02-team/WORKFLOW.md`](02-team/WORKFLOW.md), правила ревью - в [`02-team/REVIEW_POLICY.md`](02-team/REVIEW_POLICY.md).
-
+Маршрутизация задач описана в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md).

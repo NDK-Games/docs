@@ -4,17 +4,19 @@
 
 Этот документ помогает быстро ввести нового участника-человека в проект: что читать, как собрать и запустить проект, какие команды использовать и какие типовые ошибки ожидать.
 
-Для агентов процесс описан в [`TEAM.md`](TEAM.md), [`TASK_ROUTING.md`](TASK_ROUTING.md) и файлах `AGENTS/`.
+Для агентов процесс описан в [`TEAM.md`](TEAM.md), [`../process/TASK_ROUTING.md`](../process/TASK_ROUTING.md) и файлах `../agents/`.
 
 ## Быстрый старт
 
-1. Прочитать [`../00-context/DOCS.md`](../00-context/DOCS.md).
-2. Прочитать [`../01-product/PROJECT.md`](../01-product/PROJECT.md).
-3. Прочитать [`../01-product/STATE.md`](../01-product/STATE.md).
-4. Прочитать [`../01-product/PLAN.md`](../01-product/PLAN.md).
-5. Проверить свою роль в [`ROLES.md`](ROLES.md).
-6. Настроить окружение по [`../05-operations/ENVIRONMENT.md`](../05-operations/ENVIRONMENT.md).
-7. Запустить проект и тесты.
+1. Прочитать [`../00-context/DOCS.md`](../../00-context/DOCS.md).
+2. Прочитать [`01-product/strategy/PROJECT.md`](../../01-product/strategy/PROJECT.md).
+3. Прочитать [`01-product/strategy/STATE.md`](../../01-product/strategy/STATE.md).
+4. Прочитать [`01-product/strategy/ROADMAP.md`](../../01-product/strategy/ROADMAP.md).
+5. Прочитать [`01-product/planning/BACKLOG.md`](../../01-product/planning/BACKLOG.md).
+6. Прочитать [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md).
+7. Проверить свою роль в [`ROLES.md`](ROLES.md).
+8. Настроить окружение по [`../05-operations/ENVIRONMENT.md`](../../05-operations/ENVIRONMENT.md).
+9. Запустить проект и тесты.
 
 ## Что понять в первый день
 
@@ -56,17 +58,17 @@
 | --- | --- | --- | --- |
 | Репозиторий | Разработчики, reviewers |  |  |
 | Staging | QA, Product, Developers |  |  |
-| Production | Ограниченный круг |  | [`../05-operations/SECURITY.md`](../05-operations/SECURITY.md) |
-| Analytics | Product, CEO |  | [`../01-product/ANALYTICS.md`](../01-product/ANALYTICS.md) |
+| Production | Ограниченный круг |  | [`../05-operations/SECURITY.md`](../../05-operations/SECURITY.md) |
+| Analytics | Product, CEO |  | [`01-product/growth/ANALYTICS.md`](../../01-product/growth/ANALYTICS.md) |
 
 ## Типовые ошибки
 
 | Ошибка | Симптом | Что проверить | Куда смотреть |
 | --- | --- | --- | --- |
-| Не установлены зависимости | Команда запуска падает | Версии runtime и package manager | [`../03-engineering/STACK.md`](../03-engineering/STACK.md) |
-| Нет переменных окружения | Ошибка конфигурации | `.env`, secrets, environment docs | [`../05-operations/ENVIRONMENT.md`](../05-operations/ENVIRONMENT.md) |
-| Нет доступа | 401 / 403 / permission denied | Роли и доступы | [`../05-operations/SECURITY.md`](../05-operations/SECURITY.md) |
-| Тесты падают локально | Красный test run | Версии, fixtures, локальная среда | [`../04-quality/TESTING.md`](../04-quality/TESTING.md) |
+| Не установлены зависимости | Команда запуска падает | Версии runtime и package manager | [`03-engineering/stack/STACK.md`](../../03-engineering/stack/STACK.md) |
+| Нет переменных окружения | Ошибка конфигурации | `.env`, secrets, environment docs | [`../05-operations/ENVIRONMENT.md`](../../05-operations/ENVIRONMENT.md) |
+| Нет доступа | 401 / 403 / permission denied | Роли и доступы | [`../05-operations/SECURITY.md`](../../05-operations/SECURITY.md) |
+| Тесты падают локально | Красный test run | Версии, fixtures, локальная среда | [`../04-quality/TESTING.md`](../../04-quality/TESTING.md) |
 
 ## Как брать задачу
 
@@ -76,7 +78,7 @@
 
 1. CEO Agent или Tech Lead Agent назначает задачу и owner.
 2. Участник читает связанный контекст.
-3. Если нужен branch, Tech Lead Agent задает ветку по [`BRANCHING.md`](BRANCHING.md).
+3. Если нужен branch, Tech Lead Agent задает ветку по [`BRANCHING.md`](../process/BRANCHING.md).
 4. Участник выполняет задачу.
 5. Участник передает результат через review и handoff.
 

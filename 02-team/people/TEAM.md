@@ -48,7 +48,7 @@ CEO Agent отвечает за то, чтобы вход пользовател
 
 Пользователь не обязан вручную:
 
-- заполнять [`../01-product/PLAN.md`](../01-product/PLAN.md);
+- заполнять [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md);
 - выбирать шаблон задачи;
 - назначать роль;
 - создавать checklist;
@@ -98,12 +98,15 @@ CEO Agent отвечает за то, чтобы вход пользовател
 
 | Событие | Частота | Цель | Участники |
 | --- | --- | --- | --- |
-| Planning |  | Выбрать фокус | CEO / Product / Tech Lead |
-| Sync |  | Снять блокеры | Активные исполнители |
-| Review |  | Проверить изменения | Reviewer / QA |
-| Release check |  | Подтвердить готовность | Tech Lead / QA / DevOps |
+| Backlog refinement | 1 раз в неделю или перед planning | Уточнить задачи, требования, приоритеты и зависимости | Product / Tech Lead / Owner |
+| Sprint planning | Перед началом спринта | Выбрать цель спринта, capacity, WIP limit и задачи из backlog | CEO / Product / Tech Lead |
+| Sync | Ежедневно или 2-3 раза в неделю | Снять блокеры и проверить движение задач | Активные исполнители |
+| Review | По готовности задач | Проверить изменения, риски, тесты и документацию | Reviewer / QA |
+| Sprint review | В конце спринта | Принять результат относительно цели спринта | CEO / Product / Tech Lead / QA |
+| Retrospective | После sprint review | Улучшить процесс, договоренности и качество планирования | Команда |
+| Release check | Перед релизом | Подтвердить готовность релиза | Tech Lead / QA / DevOps |
 
-Детальный цикл работы описан в [`WORKFLOW.md`](WORKFLOW.md). Быстрый ввод нового человека описан в [`ONBOARDING.md`](ONBOARDING.md).
+Детальный цикл работы описан в [`WORKFLOW.md`](../process/WORKFLOW.md). Быстрый ввод нового человека описан в [`ONBOARDING.md`](ONBOARDING.md).
 
 ## Каналы коммуникации
 

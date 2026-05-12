@@ -58,33 +58,43 @@ docs/
 ├─ 00-context/
 │  └─ DOCS.md
 ├─ 01-product/
-│  ├─ PROJECT.md
-│  ├─ WIKI.md
-│  ├─ REQUIREMENTS.md
-│  ├─ USER_FLOWS.md
-│  ├─ MONETIZATION.md
-│  ├─ ANALYTICS.md
-│  ├─ ROADMAP.md
-│  ├─ PLAN.md
-│  └─ STATE.md
+│  ├─ strategy/
+│  │  ├─ PROJECT.md
+│  │  ├─ ROADMAP.md
+│  │  └─ STATE.md
+│  ├─ planning/
+│  │  ├─ BACKLOG.md
+│  │  └─ PLAN.md
+│  ├─ requirements/
+│  │  ├─ REQUIREMENTS.md
+│  │  └─ USER_FLOWS.md
+│  ├─ growth/
+│  │  ├─ MONETIZATION.md
+│  │  └─ ANALYTICS.md
+│  └─ knowledge/
+│     └─ WIKI.md
 ├─ 02-team/
-│  ├─ TEAM.md
-│  ├─ ROLES.md
-│  ├─ TASK_ROUTING.md
-│  ├─ WORKFLOW.md
-│  ├─ ONBOARDING.md
-│  ├─ BRANCHING.md
-│  ├─ REVIEW_POLICY.md
-│  ├─ AGENTS/
-│  └─ TEMPLATES/
+│  ├─ people/
+│  │  ├─ TEAM.md
+│  │  ├─ ROLES.md
+│  │  └─ ONBOARDING.md
+│  ├─ process/
+│  │  ├─ WORKFLOW.md
+│  │  ├─ TASK_ROUTING.md
+│  │  ├─ BRANCHING.md
+│  │  └─ REVIEW_POLICY.md
+│  ├─ agents/
+│  └─ templates/
 ├─ 03-engineering/
-│  ├─ STACK.md
-│  ├─ ARCHITECTURE.md
-│  ├─ DATA_MODEL.md
-│  ├─ API.md
-│  ├─ INTEGRATIONS.md
-│  ├─ CONCERNS.md
-│  └─ adr/
+│  ├─ architecture/
+│  │  ├─ ARCHITECTURE.md
+│  │  ├─ DATA_MODEL.md
+│  │  ├─ API.md
+│  │  ├─ INTEGRATIONS.md
+│  │  └─ adr/
+│  └─ stack/
+│     ├─ STACK.md
+│     └─ CONCERNS.md
 ├─ 04-quality/
 │  ├─ CONVENTIONS.md
 │  ├─ TESTING.md
@@ -107,24 +117,26 @@ docs/
 Для нового участника:
 
 1. [`README.md`](../README.md)
-2. [`01-product/PROJECT.md`](../01-product/PROJECT.md)
-3. [`01-product/REQUIREMENTS.md`](../01-product/REQUIREMENTS.md)
-4. [`01-product/USER_FLOWS.md`](../01-product/USER_FLOWS.md)
-5. [`01-product/STATE.md`](../01-product/STATE.md)
-6. [`01-product/PLAN.md`](../01-product/PLAN.md)
-7. [`02-team/ONBOARDING.md`](../02-team/ONBOARDING.md)
-8. [`02-team/TEAM.md`](../02-team/TEAM.md)
-9. [`02-team/ROLES.md`](../02-team/ROLES.md)
-10. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
+2. [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md)
+3. [`01-product/requirements/REQUIREMENTS.md`](../01-product/requirements/REQUIREMENTS.md)
+4. [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md)
+5. [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md)
+6. [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md)
+7. [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md)
+8. [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md)
+9. [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md)
+10. [`02-team/people/TEAM.md`](../02-team/people/TEAM.md)
+11. [`02-team/people/ROLES.md`](../02-team/people/ROLES.md)
+12. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
 
 Для текущей работы в CEO-first режиме:
 
 1. User сообщает CEO Agent цель, проблему или решение.
-2. CEO Agent проверяет [`01-product/PROJECT.md`](../01-product/PROJECT.md), [`01-product/ROADMAP.md`](../01-product/ROADMAP.md), [`01-product/STATE.md`](../01-product/STATE.md) и [`01-product/PLAN.md`](../01-product/PLAN.md).
-3. CEO Agent выбирает маршрут в [`02-team/TASK_ROUTING.md`](../02-team/TASK_ROUTING.md).
+2. CEO Agent проверяет [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md), [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md), [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md), [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) и [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md).
+3. CEO Agent выбирает маршрут в [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md).
 4. Назначенная роль заполняет нужный шаблон или обновляет документ-владелец.
-5. Tech Lead Agent решает, нужна ли ветка по [`02-team/BRANCHING.md`](../02-team/BRANCHING.md).
-6. После выполнения включается [`02-team/REVIEW_POLICY.md`](../02-team/REVIEW_POLICY.md) и нужные quality checks.
+5. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
+6. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
 7. Documentation Agent обновляет source of truth.
 8. CEO Agent принимает итог и сообщает пользователю результат.
 
@@ -133,28 +145,29 @@ docs/
 | Тип информации | Где хранить |
 | --- | --- |
 | Короткая входная точка и навигация по репозиторию | [`README.md`](../README.md) |
-| Суть проекта, цели, границы | [`01-product/PROJECT.md`](../01-product/PROJECT.md) |
-| Стабильные знания, FAQ, глоссарий | [`01-product/WIKI.md`](../01-product/WIKI.md) |
-| Требования и acceptance criteria | [`01-product/REQUIREMENTS.md`](../01-product/REQUIREMENTS.md) |
-| Пользовательские сценарии, точки входа, ветки поведения | [`01-product/USER_FLOWS.md`](../01-product/USER_FLOWS.md) |
-| Монетизация, реклама, покупки, подписки | [`01-product/MONETIZATION.md`](../01-product/MONETIZATION.md) |
-| Аналитика, события, конверсии, воронки | [`01-product/ANALYTICS.md`](../01-product/ANALYTICS.md) |
-| Крупные этапы и приоритеты | [`01-product/ROADMAP.md`](../01-product/ROADMAP.md) |
-| Текущий рабочий план | [`01-product/PLAN.md`](../01-product/PLAN.md) |
-| Текущее состояние, последние решения, открытые вопросы | [`01-product/STATE.md`](../01-product/STATE.md) |
-| Участники и режим работы | [`02-team/TEAM.md`](../02-team/TEAM.md) |
-| Роли и зоны ответственности | [`02-team/ROLES.md`](../02-team/ROLES.md) |
-| Маршрутизация задач | [`02-team/TASK_ROUTING.md`](../02-team/TASK_ROUTING.md) |
-| Процесс работы команды, циклы, правила задач | [`02-team/WORKFLOW.md`](../02-team/WORKFLOW.md) |
-| Быстрый ввод нового человека в проект | [`02-team/ONBOARDING.md`](../02-team/ONBOARDING.md) |
-| Ветки | [`02-team/BRANCHING.md`](../02-team/BRANCHING.md) |
-| Ревью | [`02-team/REVIEW_POLICY.md`](../02-team/REVIEW_POLICY.md) |
-| Стек | [`03-engineering/STACK.md`](../03-engineering/STACK.md) |
-| Архитектура | [`03-engineering/ARCHITECTURE.md`](../03-engineering/ARCHITECTURE.md) |
-| Данные | [`03-engineering/DATA_MODEL.md`](../03-engineering/DATA_MODEL.md) |
-| API и интерфейсы | [`03-engineering/API.md`](../03-engineering/API.md) |
-| Интеграции | [`03-engineering/INTEGRATIONS.md`](../03-engineering/INTEGRATIONS.md) |
-| Технические риски и долг | [`03-engineering/CONCERNS.md`](../03-engineering/CONCERNS.md) |
+| Суть проекта, цели, границы | [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md) |
+| Стабильные знания, FAQ, глоссарий | [`01-product/knowledge/WIKI.md`](../01-product/knowledge/WIKI.md) |
+| Требования и acceptance criteria | [`01-product/requirements/REQUIREMENTS.md`](../01-product/requirements/REQUIREMENTS.md) |
+| Пользовательские сценарии, точки входа, ветки поведения | [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md) |
+| Монетизация, реклама, покупки, подписки | [`01-product/growth/MONETIZATION.md`](../01-product/growth/MONETIZATION.md) |
+| Аналитика, события, конверсии, воронки | [`01-product/growth/ANALYTICS.md`](../01-product/growth/ANALYTICS.md) |
+| Крупные этапы, спринты и приоритеты | [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md) |
+| Очередь задач вне текущего спринта | [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md) |
+| Текущий спринт и рабочий план | [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md) |
+| Текущее состояние, последние решения, открытые вопросы | [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) |
+| Участники и режим работы | [`02-team/people/TEAM.md`](../02-team/people/TEAM.md) |
+| Роли и зоны ответственности | [`02-team/people/ROLES.md`](../02-team/people/ROLES.md) |
+| Маршрутизация задач | [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) |
+| Процесс работы команды, циклы, правила задач | [`02-team/process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) |
+| Быстрый ввод нового человека в проект | [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) |
+| Ветки | [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md) |
+| Ревью | [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) |
+| Стек | [`03-engineering/stack/STACK.md`](../03-engineering/stack/STACK.md) |
+| Архитектура | [`03-engineering/architecture/ARCHITECTURE.md`](../03-engineering/architecture/ARCHITECTURE.md) |
+| Данные | [`03-engineering/architecture/DATA_MODEL.md`](../03-engineering/architecture/DATA_MODEL.md) |
+| API и интерфейсы | [`03-engineering/architecture/API.md`](../03-engineering/architecture/API.md) |
+| Интеграции | [`03-engineering/architecture/INTEGRATIONS.md`](../03-engineering/architecture/INTEGRATIONS.md) |
+| Технические риски и долг | [`03-engineering/stack/CONCERNS.md`](../03-engineering/stack/CONCERNS.md) |
 | Соглашения | [`04-quality/CONVENTIONS.md`](../04-quality/CONVENTIONS.md) |
 | Тестирование | [`04-quality/TESTING.md`](../04-quality/TESTING.md) |
 | Баги | [`04-quality/BUGS.md`](../04-quality/BUGS.md) |
@@ -183,25 +196,26 @@ README не должен хранить требования, решения, т
 
 В `01-product/` должны оставаться продуктовые и управленческие документы:
 
-- `PROJECT.md`
-- `WIKI.md`
-- `REQUIREMENTS.md`
-- `USER_FLOWS.md`
-- `MONETIZATION.md`
-- `ANALYTICS.md`
-- `ROADMAP.md`
-- `PLAN.md`
-- `STATE.md`
+- `strategy/PROJECT.md`
+- `strategy/ROADMAP.md`
+- `strategy/STATE.md`
+- `planning/BACKLOG.md`
+- `planning/PLAN.md`
+- `requirements/REQUIREMENTS.md`
+- `requirements/USER_FLOWS.md`
+- `growth/MONETIZATION.md`
+- `growth/ANALYTICS.md`
+- `knowledge/WIKI.md`
 
 Не нужно держать здесь технические реализации, test plans, release runbooks, инфраструктурные инструкции и документы по конкретным одноразовым фичам. Их нужно:
 
-- перенести в `REQUIREMENTS.md`, если это требования;
-- перенести в `USER_FLOWS.md`, если это пользовательские сценарии;
-- перенести в `MONETIZATION.md`, если это реклама, покупки, подписки или paywall;
-- перенести в `ANALYTICS.md`, если это события, воронки, метрики или конверсии;
-- перенести в `STATE.md`, если это текущее состояние, активный вопрос или последнее решение;
-- перенести в `WIKI.md`, если это стабильное знание;
-- перенести в `03-engineering/`, если это технический контракт;
+- перенести в `requirements/REQUIREMENTS.md`, если это требования;
+- перенести в `requirements/USER_FLOWS.md`, если это пользовательские сценарии;
+- перенести в `growth/MONETIZATION.md`, если это реклама, покупки, подписки или paywall;
+- перенести в `growth/ANALYTICS.md`, если это события, воронки, метрики или конверсии;
+- перенести в `strategy/STATE.md`, если это текущее состояние, активный вопрос или последнее решение;
+- перенести в `knowledge/WIKI.md`, если это стабильное знание;
+- перенести в `03-engineering/architecture/` или `03-engineering/stack/`, если это технический контракт;
 - перенести в `04-quality/`, если это тестовый checklist;
 - перенести в `05-operations/`, если это эксплуатация;
 - отправить в `99-archive/`, если документ специфичен для старого проекта или больше не является активным.
@@ -212,13 +226,13 @@ README не должен хранить требования, решения, т
 
 Ключевые документы:
 
-- [`TEAM.md`](../02-team/TEAM.md) - общая модель команды.
-- [`ROLES.md`](../02-team/ROLES.md) - роли и зоны ответственности.
-- [`TASK_ROUTING.md`](../02-team/TASK_ROUTING.md) - маршрутизация задач сверху вниз.
-- [`WORKFLOW.md`](../02-team/WORKFLOW.md) - цикл работы, статусы, handoff и acceptance.
-- [`ONBOARDING.md`](../02-team/ONBOARDING.md) - быстрый ввод нового человека.
-- [`BRANCHING.md`](../02-team/BRANCHING.md) - правила веток.
-- [`REVIEW_POLICY.md`](../02-team/REVIEW_POLICY.md) - правила ревью.
+- [`people/TEAM.md`](../02-team/people/TEAM.md) - общая модель команды.
+- [`people/ROLES.md`](../02-team/people/ROLES.md) - роли и зоны ответственности.
+- [`process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) - маршрутизация задач сверху вниз.
+- [`process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) - цикл работы, статусы, handoff и acceptance.
+- [`people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) - быстрый ввод нового человека.
+- [`process/BRANCHING.md`](../02-team/process/BRANCHING.md) - правила веток.
+- [`process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) - правила ревью.
 
 Основные группы:
 
@@ -241,7 +255,7 @@ README не должен хранить требования, решения, т
 - релизная изоляция;
 - работа нескольких агентов.
 
-Если проект ведет один человек и изменение маленькое, отдельная ветка не обязательна. Правило описано в [`02-team/BRANCHING.md`](../02-team/BRANCHING.md).
+Если проект ведет один человек и изменение маленькое, отдельная ветка не обязательна. Правило описано в [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
 
 ## Архив
 

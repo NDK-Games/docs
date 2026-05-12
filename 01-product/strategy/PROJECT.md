@@ -76,11 +76,12 @@
 
 ## Связанные документы
 
-- [`REQUIREMENTS.md`](REQUIREMENTS.md) - требования.
-- [`USER_FLOWS.md`](USER_FLOWS.md) - пользовательские сценарии.
-- [`MONETIZATION.md`](MONETIZATION.md) - монетизация, реклама, покупки и подписки.
-- [`ANALYTICS.md`](ANALYTICS.md) - события, конверсии и воронки.
+- [`REQUIREMENTS.md`](../requirements/REQUIREMENTS.md) - требования.
+- [`USER_FLOWS.md`](../requirements/USER_FLOWS.md) - пользовательские сценарии.
+- [`MONETIZATION.md`](../growth/MONETIZATION.md) - монетизация, реклама, покупки и подписки.
+- [`ANALYTICS.md`](../growth/ANALYTICS.md) - события, конверсии и воронки.
 - [`ROADMAP.md`](ROADMAP.md) - крупные этапы и приоритеты.
-- [`PLAN.md`](PLAN.md) - текущий рабочий план.
+- [`BACKLOG.md`](../planning/BACKLOG.md) - очередь задач вне текущего спринта.
+- [`PLAN.md`](../planning/PLAN.md) - текущий спринт и рабочий план.
 - [`STATE.md`](STATE.md) - текущее состояние и открытые вопросы.
-- [`WIKI.md`](WIKI.md) - стабильные знания и справка.
+- [`WIKI.md`](../knowledge/WIKI.md) - стабильные знания и справка.

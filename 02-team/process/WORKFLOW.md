@@ -23,15 +23,17 @@ flowchart TD
 
 ## Статусы задач
 
+Единый набор статусов для [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md), task tracker и рабочих шаблонов: `todo | doing | review | done | blocked`.
+
+`CEO Intake`, `Triage` и `Definition of Ready` остаются этапами процесса, но не являются статусами задач.
+
 | Статус | Значение | Кто переводит |
 | --- | --- | --- |
-| `intake` | Запрос принят CEO Agent | CEO Agent |
-| `triage` | Определяются приоритет, scope и роль | CEO Agent |
-| `ready` | Задача готова к исполнению | Product Manager / Tech Lead |
-| `doing` | Работа выполняется | Owner |
+| `todo` | Задача находится в текущем спринте и еще не начата | CEO Agent / Product Manager / Tech Lead |
+| `doing` | Работа выполняется owner | Owner |
 | `review` | Изменения проверяются | Reviewer / QA |
-| `blocked` | Нужен ответ или внешнее действие | Owner / CEO Agent |
 | `done` | Результат принят | CEO Agent |
+| `blocked` | Нужен ответ, решение или внешнее действие | Owner / CEO Agent |
 
 ## Правила работы
 
@@ -64,7 +66,7 @@ flowchart TD
 4. Developer Bug Fix Agent воспроизводит баг и находит root cause.
 5. Исправление проходит review и regression check.
 6. QA Agent подтверждает, что баг не воспроизводится.
-7. Documentation Agent обновляет [`../04-quality/BUGS.md`](../04-quality/BUGS.md), если нужно.
+7. Documentation Agent обновляет [`04-quality/BUGS.md`](../../04-quality/BUGS.md), если нужно.
 8. CEO Agent закрывает задачу.
 
 ## Типовой процесс релиза
@@ -109,7 +111,7 @@ Handoff нужен, если:
 - есть ветка или PR;
 - есть риски, которые должен знать следующий участник.
 
-Использовать [`TEMPLATES/HANDOFF_TEMPLATE.md`](TEMPLATES/HANDOFF_TEMPLATE.md).
+Использовать [`../templates/HANDOFF_TEMPLATE.md`](../templates/HANDOFF_TEMPLATE.md).
 
 ## Definition of Done
 
