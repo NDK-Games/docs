@@ -54,6 +54,7 @@ User
 
 ```text
 docs/
+├─ README.md
 ├─ 00-context/
 │  └─ DOCS.md
 ├─ 01-product/
@@ -105,15 +106,16 @@ docs/
 
 Для нового участника:
 
-1. [`01-product/PROJECT.md`](../01-product/PROJECT.md)
-2. [`01-product/REQUIREMENTS.md`](../01-product/REQUIREMENTS.md)
-3. [`01-product/USER_FLOWS.md`](../01-product/USER_FLOWS.md)
-4. [`01-product/STATE.md`](../01-product/STATE.md)
-5. [`01-product/PLAN.md`](../01-product/PLAN.md)
-6. [`02-team/ONBOARDING.md`](../02-team/ONBOARDING.md)
-7. [`02-team/TEAM.md`](../02-team/TEAM.md)
-8. [`02-team/ROLES.md`](../02-team/ROLES.md)
-9. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
+1. [`README.md`](../README.md)
+2. [`01-product/PROJECT.md`](../01-product/PROJECT.md)
+3. [`01-product/REQUIREMENTS.md`](../01-product/REQUIREMENTS.md)
+4. [`01-product/USER_FLOWS.md`](../01-product/USER_FLOWS.md)
+5. [`01-product/STATE.md`](../01-product/STATE.md)
+6. [`01-product/PLAN.md`](../01-product/PLAN.md)
+7. [`02-team/ONBOARDING.md`](../02-team/ONBOARDING.md)
+8. [`02-team/TEAM.md`](../02-team/TEAM.md)
+9. [`02-team/ROLES.md`](../02-team/ROLES.md)
+10. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
 
 Для текущей работы в CEO-first режиме:
 
@@ -130,6 +132,7 @@ docs/
 
 | Тип информации | Где хранить |
 | --- | --- |
+| Короткая входная точка и навигация по репозиторию | [`README.md`](../README.md) |
 | Суть проекта, цели, границы | [`01-product/PROJECT.md`](../01-product/PROJECT.md) |
 | Стабильные знания, FAQ, глоссарий | [`01-product/WIKI.md`](../01-product/WIKI.md) |
 | Требования и acceptance criteria | [`01-product/REQUIREMENTS.md`](../01-product/REQUIREMENTS.md) |
@@ -162,6 +165,19 @@ docs/
 | Безопасность и доступы | [`05-operations/SECURITY.md`](../05-operations/SECURITY.md) |
 | Диагностика проблем | [`05-operations/TROUBLESHOOTING.md`](../05-operations/TROUBLESHOOTING.md) |
 | История релизов | [`06-history/CHANGELOG.md`](../06-history/CHANGELOG.md) |
+
+## README.md
+
+[`README.md`](../README.md) - корневая входная точка в репозиторий документации.
+
+README должен:
+
+- кратко объяснять назначение репозитория;
+- направлять нового читателя к [`00-context/DOCS.md`](DOCS.md) и ключевым документам;
+- показывать верхнеуровневую структуру каталогов;
+- напоминать правило source of truth.
+
+README не должен хранить требования, решения, технические контракты, планы, статусы, инструкции по деплою или другие детальные факты. Для таких данных нужно обновлять профильный документ-владелец из таблицы Source of Truth.
 
 ## 01-product
 
