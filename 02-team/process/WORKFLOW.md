@@ -11,15 +11,40 @@
 ```mermaid
 flowchart TD
     Intake["CEO Intake"] --> Triage["CEO Triage"]
-    Triage --> Product["Product / CTO clarification"]
+    Triage --> POPlan["Product Owner plan"]
+    POPlan --> Product["Product / CTO clarification"]
     Product --> Planning["Tech Lead planning"]
-    Planning --> Execution["Execution"]
+    Planning --> TeamPlan["Team execution plan"]
+    TeamPlan --> Execution["Execution"]
     Execution --> Review["Review"]
     Review --> QA["QA / Security / DevOps checks"]
     QA --> Docs["Documentation update"]
     Docs --> Acceptance["CEO Acceptance"]
     Acceptance --> Done["Done / Follow-up"]
 ```
+
+## Планирование через CEO
+
+Когда пользователь ставит работу через CEO Agent, например `CEO, сделай ...`, CEO Agent сначала выбирает уровень планирования:
+
+| Уровень | Когда использовать | Что получает Product Owner |
+| --- | --- | --- |
+| `roadmap` | Направление, веха или крупная инициатива на несколько спринтов | Простое объяснение цели, ценности, вех, зависимостей, рисков и условия перехода в sprint / task |
+| `sprint` | Набор задач на ограниченный период | Цель спринта, ожидаемый результат, scope, риски, задачи, owners и способ приемки |
+| `task` | Один проверяемый результат | Зачем задача нужна, что будет готово, что не входит, риск, owner и ближайший шаг |
+
+Для любого уровня CEO Agent обязан дать рабочий план для Product Owner простым языком. Для `sprint` и `task` дополнительно обязателен командный план выполнения.
+
+Командный план должен содержать:
+
+- одного owner для спринта или задачи;
+- список агентов / ролей и их зоны ответственности;
+- последовательные шаги, которые нельзя делать раньше предыдущих;
+- параллельные работы, которые можно запускать одновременно;
+- зависимости между агентами и артефактами;
+- точки handoff между ролями;
+- review, QA, security, docs и другие проверки по риску;
+- критерий готовности, понятный CEO Agent и Product Owner.
 
 ## Статусы задач
 
@@ -40,6 +65,8 @@ flowchart TD
 - Любая новая работа начинается через CEO Agent.
 - У задачи всегда один owner.
 - Owner отвечает за статус, handoff и проверку.
+- CEO Agent всегда формирует рабочий план для Product Owner перед передачей работы вниз.
+- Для `sprint` и `task` CEO Agent обеспечивает командный план: кто что делает, что идет последовательно, что идет параллельно и где зоны ответственности.
 - Если задачу нельзя сделать без решения пользователя, CEO Agent задает короткий блокирующий вопрос.
 - Если можно двигаться на разумном допущении, агент делает допущение и явно его помечает.
 - Документация обновляется назначенным агентом, а не пользователем.
@@ -47,16 +74,17 @@ flowchart TD
 ## Типовой процесс feature
 
 1. User сообщает CEO Agent цель.
-2. CEO Agent определяет приоритет.
+2. CEO Agent определяет уровень `roadmap | sprint | task`, приоритет и рабочий план для Product Owner.
 3. Product Manager Agent формулирует ценность, scope и acceptance criteria.
 4. CTO Agent подключается, если есть архитектурный или стратегический риск.
-5. Tech Lead Agent декомпозирует работу и решает, нужна ли ветка.
-6. Developer Feature Agent реализует изменение.
-7. Developer Test Writer Agent добавляет проверки, если нужно.
-8. Developer Code Reviewer Agent проверяет изменения.
-9. QA Agent подтверждает сценарии.
-10. Documentation Agent обновляет source of truth.
-11. CEO Agent принимает результат.
+5. Tech Lead Agent декомпозирует работу и помогает CEO Agent уточнить командный план.
+6. CEO Agent фиксирует owner, последовательные шаги, параллельные работы, зоны ответственности и handoff.
+7. Developer Feature Agent реализует изменение.
+8. Developer Test Writer Agent добавляет проверки, если нужно.
+9. Developer Code Reviewer Agent проверяет изменения.
+10. QA Agent подтверждает сценарии.
+11. Documentation Agent обновляет source of truth.
+12. CEO Agent принимает результат.
 
 ## Типовой процесс bugfix
 

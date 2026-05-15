@@ -133,12 +133,14 @@ docs/
 
 1. User сообщает CEO Agent цель, проблему или решение.
 2. CEO Agent проверяет [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md), [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md), [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md), [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) и [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md).
-3. CEO Agent выбирает маршрут в [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md).
-4. Назначенная роль заполняет нужный шаблон или обновляет документ-владелец.
-5. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
-6. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
-7. Documentation Agent обновляет source of truth.
-8. CEO Agent принимает итог и сообщает пользователю результат.
+3. CEO Agent выбирает уровень планирования `roadmap | sprint | task` и дает рабочий план для Product Owner простым языком.
+4. Если уровень `sprint` или `task`, CEO Agent дает командный план: owner, агенты, зоны ответственности, последовательные шаги, параллельные работы, зависимости, handoff и проверки.
+5. CEO Agent выбирает маршрут в [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md).
+6. Назначенная роль заполняет нужный шаблон или обновляет документ-владелец.
+7. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
+8. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
+9. Documentation Agent обновляет source of truth.
+10. CEO Agent принимает итог и сообщает пользователю результат.
 
 ## Source of Truth
 

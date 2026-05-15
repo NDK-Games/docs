@@ -39,7 +39,7 @@
 Документация поддерживает CEO-first процесс:
 
 ```text
-User -> CEO Agent -> назначенная роль -> review -> обновленный source of truth -> результат пользователю
+User -> CEO Agent -> план для Product Owner -> командный план для sprint/task -> назначенная роль -> review -> обновленный source of truth -> результат пользователю
 ```
 
-Маршрутизация задач описана в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md).
+Маршрутизация задач описана в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md). Формат планирования через CEO описан в [`02-team/agents/CEO_AGENT.md`](02-team/agents/CEO_AGENT.md).
