@@ -19,6 +19,8 @@
 
 Если информация уже относится к существующему документу, нужно обновить этот документ, а не создавать новый файл. Новый документ создается только тогда, когда у него есть отдельный читатель, владелец и зона ответственности.
 
+Исключение для команд: быстрые команды имеют владельца в [`05-operations/COMMANDS.md`](../05-operations/COMMANDS.md), но могут дублироваться в профильных документах для удобства чтения. Такие копии должны совпадать с `COMMANDS.md` и обновляться в той же правке.
+
 ## Управленческий принцип
 
 Вся работа идет сверху вниз через CEO Agent.
@@ -101,6 +103,8 @@ docs/
 │  └─ BUGS.md
 ├─ 05-operations/
 │  ├─ ENVIRONMENT.md
+│  ├─ COMMANDS.md
+│  ├─ SCRIPTS.md
 │  ├─ DEPLOYMENT.md
 │  ├─ RELEASE_CHECKLIST.md
 │  ├─ OBSERVABILITY.md
@@ -174,6 +178,8 @@ docs/
 | Тестирование | [`04-quality/TESTING.md`](../04-quality/TESTING.md) |
 | Баги | [`04-quality/BUGS.md`](../04-quality/BUGS.md) |
 | Окружения и конфигурация | [`05-operations/ENVIRONMENT.md`](../05-operations/ENVIRONMENT.md) |
+| Быстрые команды запуска, проверок, сборки, деплоя и диагностики | [`05-operations/COMMANDS.md`](../05-operations/COMMANDS.md) |
+| Реестр проектных скриптов и их назначение | [`05-operations/SCRIPTS.md`](../05-operations/SCRIPTS.md) |
 | Деплой и rollback | [`05-operations/DEPLOYMENT.md`](../05-operations/DEPLOYMENT.md) |
 | Релизная проверка | [`05-operations/RELEASE_CHECKLIST.md`](../05-operations/RELEASE_CHECKLIST.md) |
 | Метрики, логи, алерты | [`05-operations/OBSERVABILITY.md`](../05-operations/OBSERVABILITY.md) |

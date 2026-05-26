@@ -23,13 +23,16 @@
 
 ## Команды
 
-```bash
-# TODO: build
+Команды ниже должны совпадать с одноименными строками из [`COMMANDS.md`](COMMANDS.md).
 
-# TODO: deploy staging
+Описание проектных deploy-скриптов, их входов, side effects и владельцев хранится в [`SCRIPTS.md`](SCRIPTS.md).
 
-# TODO: deploy production
-```
+| Категория | Команда | Когда использовать |
+| --- | --- | --- |
+| Build | `TODO` | Перед релизом или деплоем |
+| Deploy staging | `TODO` | Для проверки перед production |
+| Deploy production | `TODO` | После release checklist |
+| Rollback | `TODO` | При критичной проблеме после деплоя |
 
 ## Rollback
 

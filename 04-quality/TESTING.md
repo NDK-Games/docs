@@ -15,13 +15,16 @@
 
 ## Команды
 
-```bash
-# TODO: unit tests
+Команды ниже должны совпадать с одноименными строками из [`../05-operations/COMMANDS.md`](../05-operations/COMMANDS.md).
 
-# TODO: integration tests
+Если проверка запускается через проектный скрипт, описание скрипта хранится в [`../05-operations/SCRIPTS.md`](../05-operations/SCRIPTS.md).
 
-# TODO: e2e tests
-```
+| Категория | Команда | Когда использовать |
+| --- | --- | --- |
+| Test | `TODO` | Перед review или релизом |
+| Unit test | `TODO` | Во время разработки и перед PR |
+| Integration test | `TODO` | При изменении контрактов |
+| E2E / UI test | `TODO` | Перед релизом |
 
 ## Обязательный smoke
 
