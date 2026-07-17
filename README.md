@@ -14,7 +14,8 @@
 4. Посмотрите [`01-product/strategy/ROADMAP.md`](01-product/strategy/ROADMAP.md) - спринты, вехи и приоритеты.
 5. Посмотрите [`01-product/planning/BACKLOG.md`](01-product/planning/BACKLOG.md) - очередь задач вне текущего спринта.
 6. Посмотрите [`01-product/planning/PLAN.md`](01-product/planning/PLAN.md) - текущий спринт.
-7. Для участия в работе прочитайте [`02-team/people/ONBOARDING.md`](02-team/people/ONBOARDING.md).
+7. Проверьте [`02-team/process/SPRINT_REGULATION.md`](02-team/process/SPRINT_REGULATION.md) - проектные правила шести обязательных этапов спринта.
+8. Для участия в работе прочитайте [`02-team/people/ONBOARDING.md`](02-team/people/ONBOARDING.md).
 
 ## Структура
 
@@ -44,4 +45,4 @@
 User -> CEO Agent -> план для Product Owner -> командный план для sprint/task -> назначенная роль -> review -> обновленный source of truth -> результат пользователю
 ```
 
-Маршрутизация задач описана в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md). Формат планирования через CEO описан в [`02-team/agents/CEO_AGENT.md`](02-team/agents/CEO_AGENT.md).
+Маршрутизация задач описана в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), цикл спринта - в [`02-team/process/SPRINT_REGULATION.md`](02-team/process/SPRINT_REGULATION.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md). Формат планирования через CEO описан в [`02-team/agents/CEO_AGENT.md`](02-team/agents/CEO_AGENT.md).

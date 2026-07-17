@@ -13,10 +13,11 @@
 3. Прочитать [`01-product/strategy/STATE.md`](../../01-product/strategy/STATE.md).
 4. Прочитать [`01-product/strategy/ROADMAP.md`](../../01-product/strategy/ROADMAP.md).
 5. Прочитать [`01-product/planning/BACKLOG.md`](../../01-product/planning/BACKLOG.md).
-6. Прочитать [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md).
-7. Проверить свою роль в [`ROLES.md`](ROLES.md).
-8. Настроить окружение по [`../05-operations/ENVIRONMENT.md`](../../05-operations/ENVIRONMENT.md).
-9. Запустить проект и тесты.
+6. Прочитать проектные правила этапов в [`SPRINT_REGULATION.md`](../process/SPRINT_REGULATION.md).
+7. Прочитать [`01-product/planning/PLAN.md`](../../01-product/planning/PLAN.md).
+8. Проверить свою роль в [`ROLES.md`](ROLES.md).
+9. Настроить окружение по [`../05-operations/ENVIRONMENT.md`](../../05-operations/ENVIRONMENT.md).
+10. Запустить проект и тесты.
 
 ## Что понять в первый день
 
@@ -25,6 +26,7 @@
 - Какой текущий фокус.
 - Какие документы являются source of truth.
 - Как задачи проходят через CEO-first процесс.
+- Как в проекте устроены аналитика, планирование, разработка, тестирование, публикация и отчет.
 - Где смотреть баги и качество.
 - Как запускать проект локально.
 
