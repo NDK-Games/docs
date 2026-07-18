@@ -20,6 +20,7 @@
 | Technical review | Tech Lead / CTO | Архитектура, поддерживаемость, риски |
 | Code review | Developer Code Reviewer | Баги, регрессии, тесты |
 | QA review | QA Agent | Сценарии, acceptance, regression |
+| Analytics review | Analyst Agent / Product Manager | Качество данных, определения метрик, сопоставимость периодов, ограничения и обоснованность выводов |
 | Security review | Security Agent | Секреты, доступы, угрозы |
 | Docs review | Documentation Agent | Актуальность и отсутствие дублей |
 

@@ -48,6 +48,7 @@ User
       ├─ Developer Code Reviewer Agent
       ├─ QA Agent
       ├─ Security Agent
+      ├─ Analyst Agent
       ├─ DevOps Agent
       └─ Documentation Agent
 ```
@@ -160,6 +161,7 @@ docs/
 | Пользовательские сценарии, точки входа, ветки поведения | [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md) |
 | Монетизация, реклама, покупки, подписки | [`01-product/growth/MONETIZATION.md`](../01-product/growth/MONETIZATION.md) |
 | Аналитика, события, конверсии, воронки | [`01-product/growth/ANALYTICS.md`](../01-product/growth/ANALYTICS.md) |
+| Форма ежедневного, недельного и специального аналитического отчета | [`02-team/templates/ANALYTICS_REPORT_TEMPLATE.md`](../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md) |
 | Крупные этапы, спринты и приоритеты | [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md) |
 | Очередь задач вне текущего спринта | [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md) |
 | Текущий спринт и рабочий план | [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md) |
@@ -252,6 +254,7 @@ README не должен хранить требования, решения, т
 - Management: CEO Agent, CTO Agent, Product Manager Agent, Tech Lead Agent.
 - Development: Developer Feature Agent, Developer Bug Fix Agent, Developer Test Writer Agent, Developer Code Reviewer Agent.
 - Quality: QA Agent, Security Agent.
+- Analytics: Analyst Agent.
 - Operations: DevOps Agent.
 - Knowledge: Documentation Agent.
 

@@ -28,6 +28,7 @@
 - Production-доступы выдаются по минимально необходимому принципу.
 - Любой security incident получает отдельную запись и владельца.
 - Новые внешние интеграции проходят проверку секретов и доступа.
+- Доступ Analyst Agent к Google Analytics, Firebase, Google Play Console и App Store Connect выдается персонально и с минимальными правами по правилам [`../01-product/growth/ANALYTICS.md`](../01-product/growth/ANALYTICS.md); API credentials хранятся вне репозитория.
 - Логи не должны содержать пароли, токены и персональные данные без необходимости.
 
 ## Реакция на инцидент

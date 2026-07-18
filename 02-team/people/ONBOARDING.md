@@ -54,7 +54,7 @@
 | Репозиторий | Разработчики, reviewers |  |  |
 | Staging | QA, Product, Developers |  |  |
 | Production | Ограниченный круг |  | [`../05-operations/SECURITY.md`](../../05-operations/SECURITY.md) |
-| Analytics | Product, CEO |  | [`01-product/growth/ANALYTICS.md`](../../01-product/growth/ANALYTICS.md) |
+| Analytics и store-данные | Analyst, Product, CEO |  | [`01-product/growth/ANALYTICS.md`](../../01-product/growth/ANALYTICS.md) |
 
 ## Типовые ошибки
 
@@ -92,5 +92,6 @@
 | Приоритеты и scope | CEO Agent / Product Manager Agent |
 | Техническое решение | CTO Agent / Tech Lead Agent |
 | Баги и тесты | QA Agent / Developer Bug Fix Agent |
+| Метрики, воронки, аномалии и отчеты | Analyst Agent |
 | Деплой и окружения | DevOps Agent |
 | Документация | Documentation Agent |
