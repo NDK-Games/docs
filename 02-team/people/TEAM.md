@@ -17,13 +17,15 @@ flowchart TD
     U["User: цель, проблема или решение"] --> CEO["CEO Agent"]
     CEO --> PM["Product Manager Agent"]
     CEO --> CTO["CTO Agent"]
+    CEO --> ANALYST["Analyst Agent"]
     PM --> TL["Tech Lead Agent"]
     CTO --> TL
+    ANALYST --> DOC["Documentation Agent"]
     TL --> DEV["Development Agents"]
     TL --> QA["QA / Security Agents"]
     DEV --> REVIEW["Review"]
     QA --> REVIEW
-    REVIEW --> DOC["Documentation Agent"]
+    REVIEW --> DOC
     DOC --> CEO
 ```
 
@@ -109,12 +111,13 @@ CEO Agent отвечает за то, чтобы вход пользовател
 3. CEO Agent формирует рабочий план для Product Owner.
 4. Для `sprint` или `task` CEO Agent формирует командный план по агентам, зонам ответственности, последовательности, параллельной работе и handoff.
 5. Product Manager Agent оформляет продуктовый смысл и acceptance criteria, если это нужно.
-6. CTO Agent оценивает технический риск, если решение влияет на архитектуру, стек, безопасность или стоимость поддержки.
-7. Tech Lead Agent декомпозирует работу и выбирает исполнителей.
-8. Development Agents выполняют реализацию, исправление, тесты или review.
-9. QA / Security / DevOps Agents проверяют область по риску.
-10. Documentation Agent обновляет source of truth.
-11. CEO Agent принимает итог, фиксирует статус и сообщает пользователю результат.
+6. Analyst Agent определяет baseline, метрики успеха и требования к данным, если решение требует измерения, либо выполняет регулярный анализ.
+7. CTO Agent оценивает технический риск, если решение влияет на архитектуру, стек, безопасность или стоимость поддержки.
+8. Tech Lead Agent декомпозирует работу и выбирает исполнителей.
+9. Development Agents выполняют реализацию, исправление, тесты или review.
+10. QA / Security / DevOps Agents проверяют область по риску.
+11. Documentation Agent обновляет source of truth.
+12. CEO Agent принимает итог, фиксирует статус и сообщает пользователю результат.
 
 ## Ритм
 
@@ -123,6 +126,8 @@ CEO Agent отвечает за то, чтобы вход пользовател
 | Backlog refinement | 1 раз в неделю или перед planning | Уточнить задачи, требования, приоритеты и зависимости | Product / Tech Lead / Owner |
 | Sprint planning | Перед началом спринта | Выбрать цель спринта, capacity, WIP limit и задачи из backlog | CEO / Product / Tech Lead |
 | Sync | Ежедневно или 2-3 раза в неделю | Снять блокеры и проверить движение задач | Активные исполнители |
+| Analytics check | Ежедневно | Проверить качество данных, основные показатели, воронки, монетизацию, ошибки и аномалии | Analyst / Product / технический owner по отклонениям |
+| Analytics summary | 1 раз в неделю | Зафиксировать динамику метрик, отзывы, выводы и следующие действия | Analyst / Product / CEO |
 | Review | По готовности задач | Проверить изменения, риски, тесты и документацию | Reviewer / QA |
 | Sprint review | В конце спринта | Принять результат относительно цели спринта | CEO / Product / Tech Lead / QA |
 | Retrospective | После sprint review | Улучшить процесс, договоренности и качество планирования | Команда |
@@ -145,4 +150,5 @@ CEO Agent отвечает за то, чтобы вход пользовател
 | Неясна ценность задачи | Product Manager / CEO | Решение о приоритете |
 | Неясна архитектура | CTO / Tech Lead | Техническое решение |
 | Блокер качества | QA / Tech Lead | План проверки или исправления |
+| Аномалия данных, метрик или монетизации | Analyst / Product Manager / Tech Lead | Проверенная причина, влияние и план действия |
 | Риск релиза | CTO / DevOps | Go / no-go решение |

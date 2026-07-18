@@ -48,6 +48,7 @@ User
       ├─ Developer Code Reviewer Agent
       ├─ QA Agent
       ├─ Security Agent
+      ├─ Analyst Agent
       ├─ DevOps Agent
       └─ Documentation Agent
 ```
@@ -82,6 +83,7 @@ docs/
 │  │  └─ ONBOARDING.md
 │  ├─ process/
 │  │  ├─ WORKFLOW.md
+│  │  ├─ SPRINT_REGULATION.md
 │  │  ├─ TASK_ROUTING.md
 │  │  ├─ BRANCHING.md
 │  │  └─ REVIEW_POLICY.md
@@ -128,10 +130,11 @@ docs/
 6. [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md)
 7. [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md)
 8. [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md)
-9. [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md)
-10. [`02-team/people/TEAM.md`](../02-team/people/TEAM.md)
-11. [`02-team/people/ROLES.md`](../02-team/people/ROLES.md)
-12. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
+9. [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md)
+10. [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md)
+11. [`02-team/people/TEAM.md`](../02-team/people/TEAM.md)
+12. [`02-team/people/ROLES.md`](../02-team/people/ROLES.md)
+13. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
 
 Для текущей работы в CEO-first режиме:
 
@@ -139,12 +142,13 @@ docs/
 2. CEO Agent проверяет [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md), [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md), [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md), [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) и [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md).
 3. CEO Agent выбирает уровень планирования `roadmap | sprint | task` и дает рабочий план для Product Owner простым языком.
 4. Если уровень `sprint` или `task`, CEO Agent дает командный план: owner, агенты, зоны ответственности, последовательные шаги, параллельные работы, зависимости, handoff и проверки.
-5. CEO Agent выбирает маршрут в [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md).
-6. Назначенная роль заполняет нужный шаблон или обновляет документ-владелец.
-7. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
-8. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
-9. Documentation Agent обновляет source of truth.
-10. CEO Agent принимает итог и сообщает пользователю результат.
+5. Для уровня `sprint` CEO Agent планирует все этапы по [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md), включая публикацию и отчет.
+6. CEO Agent выбирает маршрут в [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md).
+7. Назначенная роль заполняет нужный шаблон или обновляет документ-владелец.
+8. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
+9. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
+10. Documentation Agent обновляет source of truth.
+11. CEO Agent принимает итог и сообщает пользователю результат.
 
 ## Source of Truth
 
@@ -157,6 +161,7 @@ docs/
 | Пользовательские сценарии, точки входа, ветки поведения | [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md) |
 | Монетизация, реклама, покупки, подписки | [`01-product/growth/MONETIZATION.md`](../01-product/growth/MONETIZATION.md) |
 | Аналитика, события, конверсии, воронки | [`01-product/growth/ANALYTICS.md`](../01-product/growth/ANALYTICS.md) |
+| Форма ежедневного, недельного и специального аналитического отчета | [`02-team/templates/ANALYTICS_REPORT_TEMPLATE.md`](../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md) |
 | Крупные этапы, спринты и приоритеты | [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md) |
 | Очередь задач вне текущего спринта | [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md) |
 | Текущий спринт и рабочий план | [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md) |
@@ -165,6 +170,7 @@ docs/
 | Роли и зоны ответственности | [`02-team/people/ROLES.md`](../02-team/people/ROLES.md) |
 | Маршрутизация задач | [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) |
 | Процесс работы команды, циклы, правила задач | [`02-team/process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) |
+| Проектные этапы спринта, переходы и правила закрытия итерации | [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) |
 | Быстрый ввод нового человека в проект | [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) |
 | Ветки | [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md) |
 | Ревью | [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) |
@@ -238,6 +244,7 @@ README не должен хранить требования, решения, т
 - [`people/ROLES.md`](../02-team/people/ROLES.md) - роли и зоны ответственности.
 - [`process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) - маршрутизация задач сверху вниз.
 - [`process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) - цикл работы, статусы, handoff и acceptance.
+- [`process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) - шесть обязательных этапов спринта и их проектная настройка.
 - [`people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) - быстрый ввод нового человека.
 - [`process/BRANCHING.md`](../02-team/process/BRANCHING.md) - правила веток.
 - [`process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) - правила ревью.
@@ -247,6 +254,7 @@ README не должен хранить требования, решения, т
 - Management: CEO Agent, CTO Agent, Product Manager Agent, Tech Lead Agent.
 - Development: Developer Feature Agent, Developer Bug Fix Agent, Developer Test Writer Agent, Developer Code Reviewer Agent.
 - Quality: QA Agent, Security Agent.
+- Analytics: Analyst Agent.
 - Operations: DevOps Agent.
 - Knowledge: Documentation Agent.
 

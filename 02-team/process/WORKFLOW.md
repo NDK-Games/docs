@@ -12,7 +12,7 @@
 flowchart TD
     Intake["CEO Intake"] --> Triage["CEO Triage"]
     Triage --> POPlan["Product Owner plan"]
-    POPlan --> Product["Product / CTO clarification"]
+    POPlan --> Product["Product / CTO / Analytics clarification"]
     Product --> Planning["Tech Lead planning"]
     Planning --> TeamPlan["Team execution plan"]
     TeamPlan --> Execution["Execution"]
@@ -22,6 +22,18 @@ flowchart TD
     Docs --> Acceptance["CEO Acceptance"]
     Acceptance --> Done["Done / Follow-up"]
 ```
+
+## Цикл спринта
+
+Каждая итерация проекта проходит шесть обязательных этапов:
+
+```text
+Аналитика -> Планирование -> Разработка -> Тестирование -> Публикация -> Отчет
+```
+
+Содержание, владельцы, результаты и критерии перехода настраиваются под конкретный проект и платформу в [`SPRINT_REGULATION.md`](SPRINT_REGULATION.md). Текущие статусы этапов и подтверждения результатов фиксируются в [`PLAN.md`](../../01-product/planning/PLAN.md).
+
+Этап можно адаптировать, но нельзя исключить. Спринт считается завершенным только после закрытия всех шести этапов и сохранения отчета. Возврат из тестирования или публикации в разработку повторно открывает все затронутые проверки.
 
 ## Планирование через CEO
 
@@ -76,15 +88,16 @@ flowchart TD
 1. User сообщает CEO Agent цель.
 2. CEO Agent определяет уровень `roadmap | sprint | task`, приоритет и рабочий план для Product Owner.
 3. Product Manager Agent формулирует ценность, scope и acceptance criteria.
-4. CTO Agent подключается, если есть архитектурный или стратегический риск.
-5. Tech Lead Agent декомпозирует работу и помогает CEO Agent уточнить командный план.
-6. CEO Agent фиксирует owner, последовательные шаги, параллельные работы, зоны ответственности и handoff.
-7. Developer Feature Agent реализует изменение.
-8. Developer Test Writer Agent добавляет проверки, если нужно.
-9. Developer Code Reviewer Agent проверяет изменения.
-10. QA Agent подтверждает сценарии.
-11. Documentation Agent обновляет source of truth.
-12. CEO Agent принимает результат.
+4. Analyst Agent определяет baseline, метрики успеха и недостающий трекинг, если влияние функции должно измеряться.
+5. CTO Agent подключается, если есть архитектурный или стратегический риск.
+6. Tech Lead Agent декомпозирует работу и помогает CEO Agent уточнить командный план.
+7. CEO Agent фиксирует owner, последовательные шаги, параллельные работы, зоны ответственности и handoff.
+8. Developer Feature Agent реализует изменение.
+9. Developer Test Writer Agent добавляет проверки, если нужно.
+10. Developer Code Reviewer Agent проверяет изменения.
+11. QA Agent подтверждает сценарии, а Analyst Agent — поступление и корректность новых событий.
+12. Documentation Agent обновляет source of truth.
+13. CEO Agent принимает результат.
 
 ## Типовой процесс bugfix
 
@@ -105,8 +118,22 @@ flowchart TD
 4. QA Agent проходит обязательные проверки.
 5. Security Agent подключается при security-sensitive изменениях.
 6. DevOps Agent выполняет release checklist и деплой.
-7. Documentation Agent обновляет changelog и операционные документы.
-8. CEO Agent принимает go / no-go и итог релиза.
+7. Analyst Agent проверяет качество данных и отслеживает post-release метрики, ошибки, монетизацию и отзывы в согласованном окне.
+8. Documentation Agent обновляет changelog и операционные документы.
+9. CEO Agent принимает go / no-go и итог релиза.
+
+Этот процесс реализует этапы `Тестирование` и `Публикация` спринта, но не заменяет полный цикл из [`SPRINT_REGULATION.md`](SPRINT_REGULATION.md).
+
+## Типовой процесс аналитики
+
+1. User, CEO Agent или Product Manager Agent формулирует решение, для которого нужны данные, либо запускается регулярная проверка.
+2. Analyst Agent проверяет доступы, свежесть источников, определения метрик и ограничения данных.
+3. Analyst Agent выполняет анализ по доступным событиям и сравнивает сопоставимые периоды и сегменты.
+4. Наблюдаемые факты отделяются от интерпретаций и гипотез.
+5. Критичная аномалия сразу эскалируется Product Manager Agent, Tech Lead Agent и CEO Agent.
+6. Результат фиксируется по [`ANALYTICS_REPORT_TEMPLATE.md`](../templates/ANALYTICS_REPORT_TEMPLATE.md).
+7. Рекомендации получают приоритет, owner и следующий проверяемый шаг; изменения трекинга обновляют [`ANALYTICS.md`](../../01-product/growth/ANALYTICS.md).
+8. CEO Agent или Product Manager Agent принимает решение по рекомендациям.
 
 ## Ветки
 
@@ -151,3 +178,5 @@ Handoff нужен, если:
 - баги записаны;
 - документация обновлена;
 - CEO Agent принял результат.
+
+Для закрытия спринта дополнительно должны быть выполнены правила из [`SPRINT_REGULATION.md`](SPRINT_REGULATION.md): все шесть этапов закрыты, публикация достигла проектного критерия, отчет сохранен и связан с roadmap.
