@@ -238,15 +238,17 @@ Analyst Agent проверяет качество распределения г�
 
 ## Отчеты
 
-Отчеты создаются по [`../../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md`](../../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md).
+Отчеты создаются по [`../../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md`](../../02-team/templates/ANALYTICS_REPORT_TEMPLATE.md). Каждый выпуск включает интерактивный `.html`, полный текстовый `.md` и машиночитаемый snapshot `.json`, построенные по одному периоду и набору данных.
 
-| Тип | Периодичность / триггер | Ссылка | Owner | Статус |
-| --- | --- | --- | --- | --- |
-| Daily | Каждый рабочий день |  | Analyst Agent | `planned / active / paused` |
-| Weekly summary | Раз в неделю |  | Analyst Agent | `planned / active / paused` |
-| Release analysis | После релиза в согласованном окне |  | Analyst Agent | `planned / active / paused` |
-| A/B test | По достижении критерия завершения |  | Analyst Agent | `planned / active / paused` |
-| Anomaly | При срабатывании порога |  | Analyst Agent | `planned / active / paused` |
+| Тип | Периодичность / триггер | HTML | Markdown | Snapshot | Owner | Статус |
+| --- | --- | --- | --- | --- | --- | --- |
+| Daily | Каждый рабочий день |  |  |  | Analyst Agent | `planned / active / paused` |
+| Weekly summary | Раз в неделю |  |  |  | Analyst Agent | `planned / active / paused` |
+| Release analysis | После релиза в согласованном окне |  |  |  | Analyst Agent | `planned / active / paused` |
+| A/B test | По достижении критерия завершения |  |  |  | Analyst Agent | `planned / active / paused` |
+| Anomaly | При срабатывании порога |  |  |  | Analyst Agent | `planned / active / paused` |
+
+Рекомендации в каждом выпуске обязательно разделяются на: качество, показатели, воронки, поведение, покупки и подписки, рекламу, ошибки и сбои, A/B-тесты, отзывы и аномалии.
 
 ## Правила качества данных
 

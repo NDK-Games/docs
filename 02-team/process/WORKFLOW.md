@@ -131,9 +131,10 @@ flowchart TD
 3. Analyst Agent выполняет анализ по доступным событиям и сравнивает сопоставимые периоды и сегменты.
 4. Наблюдаемые факты отделяются от интерпретаций и гипотез.
 5. Критичная аномалия сразу эскалируется Product Manager Agent, Tech Lead Agent и CEO Agent.
-6. Результат фиксируется по [`ANALYTICS_REPORT_TEMPLATE.md`](../templates/ANALYTICS_REPORT_TEMPLATE.md).
-7. Рекомендации получают приоритет, owner и следующий проверяемый шаг; изменения трекинга обновляют [`ANALYTICS.md`](../../01-product/growth/ANALYTICS.md).
-8. CEO Agent или Product Manager Agent принимает решение по рекомендациям.
+6. Результат фиксируется по [`ANALYTICS_REPORT_TEMPLATE.md`](../templates/ANALYTICS_REPORT_TEMPLATE.md), а рекомендации разделяются по десяти обязательным областям.
+7. Analyst Agent формирует согласованный комплект: интерактивный `.html`, текстовый `.md` и snapshot `.json`.
+8. Рекомендации получают приоритет, owner и следующий проверяемый шаг; изменения трекинга обновляют [`ANALYTICS.md`](../../01-product/growth/ANALYTICS.md).
+9. CEO Agent или Product Manager Agent принимает решение по рекомендациям.
 
 ## Ветки
 
