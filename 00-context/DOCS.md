@@ -83,6 +83,7 @@ docs/
 │  │  └─ ONBOARDING.md
 │  ├─ process/
 │  │  ├─ WORKFLOW.md
+│  │  ├─ SERVICE_LIFECYCLE_REGULATION.md
 │  │  ├─ SPRINT_REGULATION.md
 │  │  ├─ TASK_ROUTING.md
 │  │  ├─ BRANCHING.md
@@ -126,15 +127,16 @@ docs/
 2. [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md)
 3. [`01-product/requirements/REQUIREMENTS.md`](../01-product/requirements/REQUIREMENTS.md)
 4. [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md)
-5. [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md)
-6. [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md)
-7. [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md)
-8. [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md)
-9. [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md)
-10. [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md)
-11. [`02-team/people/TEAM.md`](../02-team/people/TEAM.md)
-12. [`02-team/people/ROLES.md`](../02-team/people/ROLES.md)
-13. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
+5. [`02-team/process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md)
+6. [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md)
+7. [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md)
+8. [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md)
+9. [`01-product/planning/PLAN.md`](../01-product/planning/PLAN.md)
+10. [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md)
+11. [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md)
+12. [`02-team/people/TEAM.md`](../02-team/people/TEAM.md)
+13. [`02-team/people/ROLES.md`](../02-team/people/ROLES.md)
+14. Релевантные документы из `03-engineering/`, `04-quality/` и `05-operations/`
 
 Для текущей работы в CEO-first режиме:
 
@@ -170,6 +172,7 @@ docs/
 | Роли и зоны ответственности | [`02-team/people/ROLES.md`](../02-team/people/ROLES.md) |
 | Маршрутизация задач | [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) |
 | Процесс работы команды, циклы, правила задач | [`02-team/process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) |
+| Полный жизненный цикл сервиса, этапы и правила переходов | [`02-team/process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) |
 | Проектные этапы спринта, переходы и правила закрытия итерации | [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) |
 | Быстрый ввод нового человека в проект | [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) |
 | Ветки | [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md) |
@@ -244,6 +247,7 @@ README не должен хранить требования, решения, т
 - [`people/ROLES.md`](../02-team/people/ROLES.md) - роли и зоны ответственности.
 - [`process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) - маршрутизация задач сверху вниз.
 - [`process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) - цикл работы, статусы, handoff и acceptance.
+- [`process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) - 18 обязательных этапов полного жизненного цикла сервиса и правила ведения их статусов.
 - [`process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) - шесть обязательных этапов спринта и их проектная настройка.
 - [`people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) - быстрый ввод нового человека.
 - [`process/BRANCHING.md`](../02-team/process/BRANCHING.md) - правила веток.
