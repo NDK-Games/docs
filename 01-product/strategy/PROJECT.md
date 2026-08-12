@@ -12,6 +12,7 @@
 - Основная проблема пользователя:
 - Основная ценность продукта:
 - Текущий статус: `idea | discovery | development | beta | production | maintenance`
+- Текущие этапы жизненного цикла: см. реестр в [`STATE.md`](STATE.md)
 
 ## Цели
 
@@ -84,4 +85,5 @@
 - [`BACKLOG.md`](../planning/BACKLOG.md) - очередь задач вне текущего спринта.
 - [`PLAN.md`](../planning/PLAN.md) - текущий спринт и рабочий план.
 - [`STATE.md`](STATE.md) - текущее состояние и открытые вопросы.
+- [`SERVICE_LIFECYCLE_REGULATION.md`](../../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) - обязательный жизненный цикл сервиса и правила переходов.
 - [`WIKI.md`](../knowledge/WIKI.md) - стабильные знания и справка.
