@@ -33,7 +33,7 @@
 
 ## Игровые проекты
 
-[Игровой профиль](07-project-types/games/README.md) содержит полный регламент всех **17 этапов** от концепта и прототипа до публикации, аналитики, А/Б тестов и продвижения. Каждый этап заканчивается отдельной проверкой пользователя и разрешением продолжения. В профиле находятся актуальные шаблоны цели, дизайна, проверки, реестра этапов и учебный пример. Он применяется **только к играм**. Для подключения используйте [PROJECT_SETUP.md](07-project-types/games/PROJECT_SETUP.md).
+[Игровой раздел](07-project-types/games/README.md) применяется **только к играм**. Он содержит [регламент всех 17 этапов](07-project-types/games/GAME_LIFECYCLE.md) с проверкой пользователя после каждого и [дизайн игры](07-project-types/games/GAME_DESIGN.md). Цель, состояние, планы, требования и приёмка ведутся в общих документах по карте выше.
 
 ## Главное правило
 
@@ -51,4 +51,4 @@
 User -> CEO Agent -> план для Product Owner -> командный план для sprint/task -> назначенная роль -> review -> обновленный source of truth -> результат пользователю
 ```
 
-Жизненный цикл выбирается по [типу проекта](07-project-types/README.md). Приёмка этапа игры пользователем обязательна и не заменяется решением CEO Agent или завершением спринта. Маршрутизация задач - в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), цикл спринта - в [`02-team/process/SPRINT_REGULATION.md`](02-team/process/SPRINT_REGULATION.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md). Формат планирования через CEO описан в [`02-team/agents/CEO_AGENT.md`](02-team/agents/CEO_AGENT.md).
+Жизненный цикл выбирается по [типу проекта](07-project-types/README.md). Маршрутизация задач - в [`02-team/process/TASK_ROUTING.md`](02-team/process/TASK_ROUTING.md), процесс работы - в [`02-team/process/WORKFLOW.md`](02-team/process/WORKFLOW.md), цикл спринта - в [`02-team/process/SPRINT_REGULATION.md`](02-team/process/SPRINT_REGULATION.md), правила ревью - в [`02-team/process/REVIEW_POLICY.md`](02-team/process/REVIEW_POLICY.md). Формат планирования через CEO описан в [`02-team/agents/CEO_AGENT.md`](02-team/agents/CEO_AGENT.md).
