@@ -115,6 +115,15 @@ docs/
 │  └─ TROUBLESHOOTING.md
 ├─ 06-history/
 │  └─ CHANGELOG.md
+├─ 07-project-types/
+│  ├─ README.md
+│  └─ games/
+│     ├─ README.md
+│     ├─ GAME_LIFECYCLE.md
+│     ├─ PROJECT_SETUP.md
+│     ├─ templates/
+│     ├─ examples/
+│     └─ legacy/three-stage/
 └─ 99-archive/
    └─ project-specific/
 ```
@@ -127,7 +136,7 @@ docs/
 2. [`01-product/strategy/PROJECT.md`](../01-product/strategy/PROJECT.md)
 3. [`01-product/requirements/REQUIREMENTS.md`](../01-product/requirements/REQUIREMENTS.md)
 4. [`01-product/requirements/USER_FLOWS.md`](../01-product/requirements/USER_FLOWS.md)
-5. [`02-team/process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md)
+5. [Профили проектов](../07-project-types/README.md) и регламент, выбранный в `PROJECT.md`
 6. [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md)
 7. [`01-product/strategy/ROADMAP.md`](../01-product/strategy/ROADMAP.md)
 8. [`01-product/planning/BACKLOG.md`](../01-product/planning/BACKLOG.md)
@@ -150,7 +159,7 @@ docs/
 8. Tech Lead Agent решает, нужна ли ветка по [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md).
 9. После выполнения включается [`02-team/process/REVIEW_POLICY.md`](../02-team/process/REVIEW_POLICY.md) и нужные quality checks.
 10. Documentation Agent обновляет source of truth.
-11. CEO Agent принимает итог и сообщает пользователю результат.
+11. CEO Agent принимает технический итог и сообщает пользователю результат. Если достигнута граница этапа игры, передаёт его на проверку пользователю и останавливается по выбранному игровому регламенту; сам разрешение перехода не выдаёт.
 
 ## Source of Truth
 
@@ -172,7 +181,11 @@ docs/
 | Роли и зоны ответственности | [`02-team/people/ROLES.md`](../02-team/people/ROLES.md) |
 | Маршрутизация задач | [`02-team/process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) |
 | Процесс работы команды, циклы, правила задач | [`02-team/process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) |
-| Полный жизненный цикл сервиса, этапы и правила переходов | [`02-team/process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) |
+| Жизненный цикл сервиса при выборе типа `service`, этапы и переходы | [`02-team/process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) |
+| Выбор типа проекта и подключение профильного процесса | [`07-project-types/README.md`](../07-project-types/README.md); фактический выбор — `PROJECT.md` |
+| Жизненный цикл игры, 17 этапов и обязательные проверки пользователя | [`07-project-types/games/GAME_LIFECYCLE.md`](../07-project-types/games/GAME_LIFECYCLE.md) |
+| Размещение игровых документов и сопоставление с общим ядром | [`07-project-types/games/PROJECT_SETUP.md`](../07-project-types/games/PROJECT_SETUP.md) |
+| Фактические статусы этапов и подтверждения пользователя | [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) |
 | Проектные этапы спринта, переходы и правила закрытия итерации | [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) |
 | Быстрый ввод нового человека в проект | [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) |
 | Ветки | [`02-team/process/BRANCHING.md`](../02-team/process/BRANCHING.md) |
@@ -247,7 +260,7 @@ README не должен хранить требования, решения, т
 - [`people/ROLES.md`](../02-team/people/ROLES.md) - роли и зоны ответственности.
 - [`process/TASK_ROUTING.md`](../02-team/process/TASK_ROUTING.md) - маршрутизация задач сверху вниз.
 - [`process/WORKFLOW.md`](../02-team/process/WORKFLOW.md) - цикл работы, статусы, handoff и acceptance.
-- [`process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) - 18 обязательных этапов полного жизненного цикла сервиса и правила ведения их статусов.
+- [`process/SERVICE_LIFECYCLE_REGULATION.md`](../02-team/process/SERVICE_LIFECYCLE_REGULATION.md) - 18 этапов при явном выборе процесса сервиса; для игры используется отдельный профиль.
 - [`process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) - шесть обязательных этапов спринта и их проектная настройка.
 - [`people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) - быстрый ввод нового человека.
 - [`process/BRANCHING.md`](../02-team/process/BRANCHING.md) - правила веток.
@@ -263,6 +276,14 @@ README не должен хранить требования, решения, т
 - Knowledge: Documentation Agent.
 
 Роли можно совмещать, но вход остается один: CEO Agent. В маленьком проекте CEO Agent может последовательно выполнить остальные роли. В командной работе CEO Agent назначает владельцев, review и handoff.
+
+## 07-project-types
+
+[Каталог профилей](../07-project-types/README.md) расширяет общие документы правилами конкретного типа продукта. В `PROJECT.md` выбирается один основной жизненный цикл. Для мобильной игры применяется только [игровой профиль](../07-project-types/games/README.md): 17 этапов, каждый с проверкой пользователя и отдельным разрешением продолжения. Общий сервисный регламент не добавляет к игре второй реестр из 18 этапов.
+
+Шаблоны и учебные примеры профиля не являются рабочей документацией конкретного проекта. После подключения цель принадлежит `PROJECT.md`, статусы и подтверждения — `STATE.md`, вехи — `ROADMAP.md`, текущие задачи — `PLAN.md`. Правила размещения GDD и других игровых дополнений описаны в [PROJECT_SETUP.md](../07-project-types/games/PROJECT_SETUP.md).
+
+Для веб- и других неигровых проектов специальные папки и регламенты будут добавлены позднее. Игровые этапы к ним автоматически не применяются. Архив `games/legacy/three-stage/` сохраняет предыдущие материалы и не является активным процессом.
 
 ## Ветки
 

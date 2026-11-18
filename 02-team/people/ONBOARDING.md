@@ -10,7 +10,7 @@
 
 1. Прочитать [`../00-context/DOCS.md`](../../00-context/DOCS.md).
 2. Прочитать [`01-product/strategy/PROJECT.md`](../../01-product/strategy/PROJECT.md).
-3. Прочитать [`01-product/strategy/STATE.md`](../../01-product/strategy/STATE.md).
+3. Проверить выбранный [профиль проекта](../../07-project-types/README.md), затем прочитать [`01-product/strategy/STATE.md`](../../01-product/strategy/STATE.md): текущий этап, подтверждения и разрешённые действия. Для игры нельзя начинать следующий этап до решения пользователя.
 4. Прочитать [`01-product/strategy/ROADMAP.md`](../../01-product/strategy/ROADMAP.md).
 5. Прочитать [`01-product/planning/BACKLOG.md`](../../01-product/planning/BACKLOG.md).
 6. Прочитать проектные правила этапов в [`SPRINT_REGULATION.md`](../process/SPRINT_REGULATION.md).

@@ -23,3 +23,6 @@ temp/
 .env
 .env.*
 !.env.example
+
+# Generated local documentation bundle
+/Docs.zip
