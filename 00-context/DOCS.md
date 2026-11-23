@@ -155,7 +155,13 @@ docs/
 │     ├─ README.md
 │     ├─ GAME_LIFECYCLE.md
 │     ├─ GAME_DESIGN.md
-│     └─ GAME_SCREENS.md
+│     ├─ GAME_SCREENS.md
+│     └─ references/
+│        ├─ README.md
+│        ├─ SOURCES.json
+│        ├─ icons/
+│        ├─ screens/
+│        └─ recommends/
 └─ 99-archive/
    └─ project-specific/
 ```
@@ -218,6 +224,7 @@ docs/
 | Жизненный цикл игры, 17 этапов и обязательные проверки пользователя | [`07-project-types/games/GAME_LIFECYCLE.md`](../07-project-types/games/GAME_LIFECYCLE.md) |
 | Игровой цикл, механики, прогрессия, контент, баланс, достижения, визуальный стиль и звук | [`07-project-types/games/GAME_DESIGN.md`](../07-project-types/games/GAME_DESIGN.md), только для игры |
 | Общий стандарт экранов игры, главного меню, настроек, дополнительных наград и состояний | [`07-project-types/games/GAME_SCREENS.md`](../07-project-types/games/GAME_SCREENS.md); конкретные экраны — `USER_FLOWS.md`, применимость и отклонения — `REQUIREMENTS.md` |
+| Референсы и стандарт иконок, скриншотов и промографики магазинов игр | [`07-project-types/games/references/`](../07-project-types/games/references/README.md); в каждом разделе — требования платформ, стандарт и локальные примеры |
 | Фактические статусы этапов и подтверждения пользователя | [`01-product/strategy/STATE.md`](../01-product/strategy/STATE.md) |
 | Проектные этапы спринта, переходы и правила закрытия итерации | [`02-team/process/SPRINT_REGULATION.md`](../02-team/process/SPRINT_REGULATION.md) |
 | Быстрый ввод нового человека в проект | [`02-team/people/ONBOARDING.md`](../02-team/people/ONBOARDING.md) |
